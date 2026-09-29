@@ -461,17 +461,26 @@ address{font-style:normal;margin:28px 0;color:#444444;line-height:1.9}
 .toast-close:hover{color:#12161A}
 
 /* ---------------------------------------------------------------- SUBPAGE STYLES */
-.page-hero{position:relative;padding:clamp(120px,18vh,170px) 0 clamp(48px,8vh,72px);background:var(--ink);
+.page-hero{position:relative;padding:clamp(96px,12vh,130px) 0 clamp(36px,5vh,52px);background:var(--ink);
            border-bottom:1px solid var(--line);overflow:hidden}
 .page-hero::before{content:"";position:absolute;inset:0;
                    background:radial-gradient(ellipse at 80% 20%, rgba(5,57,101,.06) 0%, transparent 60%);
                    pointer-events:none}
-.page-hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(40px,6vw,90px);align-items:end}
-.page-h{font-size:clamp(38px,5.6vw,72px);line-height:1.02;margin:.2em 0 .4em;color:#12161A}
-.page-lede{font-size:clamp(16px,1.35vw,19px);line-height:1.6;color:var(--mute);max-width:48ch;margin:0}
-.page-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.page-hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(36px,5vw,72px);align-items:center}
+.page-h{font-size:clamp(36px,5.2vw,66px);line-height:1.04;margin:.15em 0 .35em;color:#12161A}
+.page-lede{font-size:clamp(15px,1.25vw,18px);line-height:1.65;color:var(--mute);max-width:52ch;margin:0}
+.page-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
 .pill{padding:8px 14px;border:1px solid rgba(5,57,101,.2);font:500 11px/1 var(--sans);
       letter-spacing:.14em;text-transform:uppercase;color:var(--sand);background:rgba(5,57,101,.06)}
+
+.about-hero-feature-card{background:#FFFFFF;border:1px solid var(--line);border-radius:4px;overflow:hidden;box-shadow:0 12px 36px rgba(5,57,101,.08);display:flex;flex-direction:column}
+.about-hero-media{position:relative;height:clamp(250px,25vw,310px);overflow:hidden;background:#F4F6F8}
+.about-hero-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.about-hero-feature-card:hover .about-hero-media img{transform:scale(1.03)}
+.about-hero-badge{position:absolute;top:14px;left:14px;background:rgba(5,57,101,.92);color:#FFFFFF;padding:6px 12px;font:600 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;border-radius:2px;box-shadow:0 4px 12px rgba(0,0,0,.15);z-index:2}
+.about-hero-caption{padding:16px 20px;background:#FFFFFF;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px}
+.about-hero-tag{font:600 10px/1 var(--sans);color:var(--sand);letter-spacing:.16em;text-transform:uppercase;display:block;margin-bottom:4px}
+.about-hero-card-title{font:500 17px/1.2 var(--serif);color:#12161A;margin:0}
 
 .page-hero-card{background:#FFFFFF;border:1px solid var(--line);padding:clamp(24px,3vw,36px);
                 position:relative;box-shadow:0 8px 30px rgba(5,57,101,.06)}
