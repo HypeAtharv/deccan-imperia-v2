@@ -371,9 +371,14 @@ address{font-style:normal;margin:28px 0;color:#444444;line-height:1.9}
 
 /* mobile header & toggle */
 @media (max-width: 900px){
-  .bar-actions{gap:8px}
+  .bar{height:60px;padding:10px max(var(--pad),env(safe-area-inset-left));gap:12px;justify-content:space-between}
+  .brand{gap:10px;min-width:0;flex-shrink:0}
+  .brand-logo{height:30px}
+  .brand-text{min-width:0;overflow:hidden}
+  .brand-text b{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .brand-text small{font-size:8px;letter-spacing:.14em}
+  .bar-actions{gap:8px;flex-shrink:0;margin-left:auto}
   .bar .btn{padding:8px 12px;font-size:10px;letter-spacing:.08em;min-height:36px}
-  .bar .btn-download{padding:8px 10px}
   .nav-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;
               width:36px;height:36px;border-radius:2px;cursor:pointer;padding:0;flex-shrink:0}
   .nav-toggle span{display:block;width:17px;height:1.5px;transition:all .25s ease}
@@ -382,16 +387,28 @@ address{font-style:normal;margin:28px 0;color:#444444;line-height:1.9}
   .nav-toggle.open span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
 }
 
-@media (max-width: 520px){
-  .bar .btn-download span{display:none}
-  .bar .btn-download{padding:8px 10px}
-  .bar .btn-solid{padding:8px 10px;font-size:9.5px}
+@media (max-width: 768px){
+  /* Hide download button in top bar on mobile to eliminate clutter and prevent text collision */
+  /* Download brochure is prominently available in the mobile menu drawer (#mobileDrawer) */
+  .bar .btn-download{display:none}
+  .bar .btn-solid{padding:8px 12px;font-size:10px;letter-spacing:.08em}
+}
+
+@media (max-width: 420px){
+  .bar{height:56px;padding:8px 16px}
+  .brand{gap:8px}
+  .brand-logo{height:28px}
+  .brand-text b{font-size:14px}
+  .brand-text small{font-size:7.5px}
+  .bar .btn-solid{padding:7px 10px;font-size:9.5px;letter-spacing:.06em}
+  .nav-toggle{width:34px;height:34px}
 }
 
 @media (max-width: 360px){
   .brand-text small{display:none}
   .brand-text b{font-size:13px}
-  .bar .btn-solid{padding:7px 8px;font-size:9px}
+  .bar .btn-solid{padding:6px 8px;font-size:9px}
+  .nav-toggle{width:32px;height:32px}
 }
 
 /* ---------------------------------------------------------------- mobile drawer */
