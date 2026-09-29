@@ -1,23 +1,23 @@
 /* ==========================================================================
-   Deccan Imperia — Luxury Light Theme with #053965 Navy Brand Accent
-   Offwhite background, black typographic hierarchy, Tathe Deshmukh logo blue.
+   Deccan Imperia — Luxury Pure White Theme with #053965 Navy Brand Accent
+   Pure white background (#FFFFFF), black typographic hierarchy, Tathe Deshmukh logo blue.
    First section (3D walkthrough scenes) remains dark/photorealistic.
    ========================================================================== */
 :root{
   --navy:       #053965;           /* Official Tathe Deshmukh Logo Color */
   --navy-dark:  #032543;
   --navy-light: #094d87;
-  --ink:        #FAF8F5;           /* Offwhite page & section background */
-  --ink-2:      #F1ECE4;           /* Soft offwhite for alternating sections & footer */
-  --ink-card:   #FFFFFF;           /* Crisp white for cards and form surfaces */
+  --ink:        #FFFFFF;           /* Pure white page & section background */
+  --ink-2:      #FFFFFF;           /* Pure white for sections & footer */
+  --ink-card:   #FFFFFF;           /* Pure white for cards and form surfaces */
   --cream:      #12161A;           /* Primary text: black / charcoal */
   --cream-2:    #25303B;           /* Headings & bold text */
   --sand:       #053965;           /* Primary brand accent: logo color #053965 */
   --sand-2:     #032543;           /* Darker brand accent */
   --gold:       #C59B27;           /* Warm heritage gold accent */
   --mute:       #556370;           /* Muted text: refined slate */
-  --line:       rgba(5,57,101,.12);/* Delicate navy-tinted hairline borders */
-  --line-strong:rgba(5,57,101,.24);
+  --line:       rgba(5,57,101,.14);/* Crisp navy-tinted hairline borders */
+  --line-strong:rgba(5,57,101,.25);
   --serif: "Cormorant Garamond", Georgia, serif;
   --sans:  "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --pad:   clamp(16px, 4.2vw, 64px);
@@ -53,8 +53,8 @@ em{font-style:italic;color:var(--sand)}
 .bar:not(.solid) .nav-toggle span{background:#ffffff}
 
 /* Solid bar (scrolled past hero & on all subpages) */
-.bar.solid{background:rgba(250,248,245,.96);backdrop-filter:blur(14px);
-           border-bottom:1px solid rgba(5,57,101,.12);box-shadow:0 4px 20px rgba(5,57,101,.04)}
+.bar.solid{background:rgba(255,255,255,.98);backdrop-filter:blur(14px);
+           border-bottom:1px solid rgba(5,57,101,.12);box-shadow:0 4px 20px rgba(5,57,101,.05)}
 .bar.solid .brand-text b{color:#053965}
 .bar.solid .brand-text small{color:#556370}
 .bar.solid .nav a{color:#12161A}
