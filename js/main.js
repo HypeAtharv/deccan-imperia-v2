@@ -104,7 +104,9 @@
   // Local file previews cannot safely upload file:// images to WebGL textures.
   // In that environment use the CSS camera fallback instead of hiding the images
   // behind a canvas that may never receive a valid texture.
-  if (window.DepthStage && location.protocol !== "file:") {
+  // On phones, keep the same scroll camera movement but skip the extra WebGL depth-map
+  // downloads. This prevents later scenes from competing with the first visible image.
+  if (window.DepthStage && location.protocol !== "file:" && !compactViewport) {
     $$(".cam").forEach(container => {
       const renderer = DepthStage.create(container);
       if (!renderer) return;
@@ -316,6 +318,24 @@
   window.__film = { cams, lenis, ScrollTrigger, renderers };
 
   function wireStaticUI() {
+    const menuToggle = $(".home-menu-toggle");
+    const menu = $(".bar .nav");
+    if (menuToggle && menu) {
+      const closeMenu = () => {
+        menu.classList.remove("open");
+        menuToggle.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation");
+      };
+      menuToggle.addEventListener("click", () => {
+        const open = menu.classList.toggle("open");
+        menuToggle.classList.toggle("is-open", open);
+        menuToggle.setAttribute("aria-expanded", String(open));
+        menuToggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+      });
+      $$("a", menu).forEach(link => link.addEventListener("click", closeMenu));
+      document.addEventListener("keydown", event => event.key === "Escape" && closeMenu());
+    }
     $$(".plan-tabs button").forEach(button => button.addEventListener("click", () => {
       $$(".plan-tabs button").forEach(item => item.setAttribute("aria-selected", String(item === button)));
       $$(".plan").forEach(plan => plan.classList.toggle("is-on", plan.dataset.plan === button.dataset.plan));
@@ -333,7 +353,7 @@
         return;
       }
       const message = `Hello, I'm ${name} (${phone}). I'm interested in Deccan Imperia — ${data.get("topic")}.`;
-      window.open(`https://wa.me/919028561515?text=${encodeURIComponent(message)}`, "_blank", "noopener");
+      window.open(`https://wa.me/919970353935?text=${encodeURIComponent(message)}`, "_blank", "noopener");
       note.textContent = "Opening WhatsApp with your message…";
     });
   }

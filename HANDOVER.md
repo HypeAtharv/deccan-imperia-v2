@@ -5,16 +5,16 @@
 This is a complete static website. It does not require React, a database, a build step or a paid video
 service. The production entry point is `index.html`.
 
-- `index.html` — flagship home page with 3D photoreal scroll walkthrough and sections
-- `about.html` — About Tathe Deshmukh Builder & Developer (200-year heritage, founders, philosophy)
-- `projects.html` — Deccan Imperia Phase 1, Phase 2, Tathe Deshmukh Nagar, specifications matrix & gallery
-- `contact.html` — site visit booking form, NAP coordinates, drive times, and FAQ
-- `css/style.css` — desktop, mobile and reduced-motion design across all pages
-- `js/main.js` — GSAP scroll journey and interface behavior for index.html
+- `index.html` — page structure and content
+- `about.html` — family legacy and builder story
+- `projects.html` — project presentation, plans and lived spaces
+- `contact.html` — site-visit experience, directions and WhatsApp enquiry
+- `css/style.css` — desktop, mobile and reduced-motion design
+- `css/editorial.css` — shared white-and-navy editorial design for all pages
+- `js/main.js` — GSAP scroll journey and interface behavior
 - `js/depth.js` — WebGL depth-parallax renderer
-- `js/nav.js` — shared navigation, mobile drawer toggle, and brochure download handler
-- `assets/brochure/` — official developer brochure PDF (`Tathe Deshmukh Builders & Developer.pdf`)
-- `assets/logo/` — official Tathe Deshmukh brand logo (`logo.png`)
+- `js/editorial.js` — mobile navigation, plan tabs, FAQs and contact form
+- `js/vendor/` — local GSAP, ScrollTrigger and Lenis files
 - `assets/tour/` — walkthrough images, phone variants and depth maps
 - `assets/img/` — plans and supporting property images
 - `assets/video/` — archived experiments; the active page does not load these videos
@@ -46,8 +46,9 @@ Upload the contents of this folder—not the enclosing folder—to any static ho
 Cloudflare Pages, GitHub Pages, an Apache/Nginx server or the public folder of an existing site. Keep
 the directory structure unchanged because asset paths are relative.
 
-No environment variables or API keys are required. The enquiry form opens WhatsApp and currently
-sends to `+91 90285 61515`; update the `wa.me` number near the end of `js/main.js` if required.
+No environment variables or API keys are required. The enquiry forms open WhatsApp and currently
+send to the primary contact, `+91 99703 53935`. The other contact numbers remain `+91 90285 61515`
+and `+91 81492 91515`.
 
 ## Approved active walkthrough order
 
@@ -90,3 +91,27 @@ fixed full-screen position; they must not rise upward from below.
 - The dedicated stair-climb and first-floor landing chapters have been removed.
 - The active page uses no video and needs no Runway subscription.
 - The site falls back safely to CSS depth motion when opened through `file://`.
+- About, Projects and Contact use the approved white-and-navy system and new Maharashtrian family
+  lifestyle photography in `assets/lifestyle/`.
+- The editorial pages have no horizontal overflow at 390 px and share direct navigation with Home.
+- The Home information sections have explicit high-contrast colours, including `sq.ft.`, travel-time,
+  amenity, specification, form and footer labels.
+- Contact includes a responsive animated route map in “How to reach us”; the moving route markers are
+  embedded SVG animation and require no map account, API key or paid service.
+- Four additional compressed lifestyle photographs in `assets/lifestyle/` show Maharashtrian
+  community, dining, terrace and consultation moments. They are used on Home, About and Projects and
+  should remain lazy-loaded below the hero areas.
+- The Home and editorial headers all include a tested phone menu. On mobile, the cinematic tour keeps
+  its CSS camera movement while omitting additional WebGL depth-map downloads for faster first load.
+- `vercel.json` applies long-lived immutable caching to versioned static assets, and `.vercelignore`
+  excludes archived video experiments and development-only files from production uploads.
+- On 30 September, Projects gained a neighbourhood image and a compact full-family exterior photo
+  under the home facts. The earlier two-image gallery was removed after mobile review because it
+  made the section too long. The unused generated image is preserved as
+  `assets/lifestyle/family-living-generations.webp` (1672 × 941, about 168 KB).
+- Projects and About now use the photorealistic tour exteriors instead of the older CGI-style
+  `assets/img/hero-corner.webp` and `assets/img/row-oblique-dusk.webp`. Floor plans remain diagrams.
+- The current production site is `https://site-pied-two-99.vercel.app/`. The Projects and About
+  images were checked in the live browser after deployment.
+- The Home amenities family image uses a 20% horizontal focal point below 600 px so the grandfather
+  and the rest of the group remain visible on phones.

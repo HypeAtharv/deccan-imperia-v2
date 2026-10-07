@@ -378,7 +378,7 @@
         return;
       }
       const msg = `Hello, I'm ${name} (${phone}). I'm interested in Deccan Imperia — ${d.get("topic")}.`;
-      window.open(`https://wa.me/919028561515?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
+      window.open(`https://wa.me/919970353935?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
       note.textContent = "Opening WhatsApp with your message…";
     });
   }

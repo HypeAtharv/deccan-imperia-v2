@@ -1,5 +1,3 @@
-.DS_Store
-Thumbs.db
+.vercel
 node_modules/
-package*.json
-*.log
+.DS_Store
