@@ -99,7 +99,7 @@
         <b>${title}</b>
         <span>${subtitle}</span>
       </div>
-      <a class="toast-action" href="https://wa.me/919028561515?text=Hello%2C%20please%20send%20the%20Deccan%20Imperia%20brochure%20to%20my%20WhatsApp." target="_blank" rel="noopener">WhatsApp Copy</a>
+      <a class="toast-action" href="https://wa.me/919970353935?text=Hello%2C%20please%20send%20the%20Deccan%20Imperia%20brochure%20to%20my%20WhatsApp." target="_blank" rel="noopener">WhatsApp Copy</a>
       <button class="toast-close" aria-label="Close notification">&times;</button>
     `;
 
