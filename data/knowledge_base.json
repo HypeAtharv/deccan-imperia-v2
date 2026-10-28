@@ -1,0 +1,88 @@
+{
+  "project_overview": {
+    "name": "Deccan Imperia (Phase 1)",
+    "tagline": "Private G+1 Row Bungalows on 30 × 50 ft Plots in Pandharpur",
+    "developer": {
+      "name": "Tathe Deshmukh Builder & Developer",
+      "legacy": "Decades of trusted land development, residential construction, and landmark developments in the Pandharpur region.",
+      "leadership": [
+        {
+          "name": "Sagar Tathe Deshmukh",
+          "phone": "+91 90285 61515",
+          "role": "Founder & Managing Director"
+        },
+        {
+          "name": "Shubham Tathe Deshmukh",
+          "phone": "+91 81492 91515",
+          "role": "Director & Partner"
+        }
+      ]
+    },
+    "architect": {
+      "name": "Bagal Architects",
+      "role": "Chief Architectural Planning & Design",
+      "philosophy": "Climate-responsive, cross-ventilated, luxury living blending modern aesthetics with traditional Solapur-Pandharpur family needs."
+    },
+    "location": {
+      "address": "Gate No. 39, Tathe Deshmukh Nagar, Behind Doodh Pandhari, Pune–Pandharpur Road, Pandharpur, Maharashtra 413304",
+      "distance_landmarks": "Situated behind Doodh Pandhari, approximately 7–10 minutes from Pandharpur railway station, ST bus stand, and the sacred Vitthal-Rukmini Mandir corridor."
+    }
+  },
+  "bungalow_specifications": {
+    "plot_size": "30 ft × 50 ft (1,500 sq. ft. dedicated plot per bungalow)",
+    "building_type": "Independent G+1 Row Bungalow (Ground + First Floor + Private Terrace)",
+    "configuration": "Spacious 3 BHK + Private Terrace + Dedicated Car Porch",
+    "ground_floor": "Grand living hall, guest/parents bedroom, modern kitchen & dining area, common washroom, front garden setback & covered parking porch.",
+    "first_floor": "Master bedroom with attached private balcony, children's/second master bedroom with attached bath, family lounge/lobby.",
+    "terrace": "Full private rooftop open terrace for family gatherings, solar installation, and starlit evenings.",
+    "vaastu_compliance": "Designed with careful adherence to Vaastu Shastra principles, optimized for natural morning sunlight and cross-ventilation.",
+    "sample_bungalow": "Fully completed and furnished sample bungalow on-site, open for walkthroughs 7 days a week, 9:00 AM – 7:00 PM."
+  },
+  "project_amenities": [
+    "Dedicated 30x50 ft independent plot boundary for each owner",
+    "Wide internal paved/concrete roads with LED street lighting",
+    "Independent covered car parking for each bungalow",
+    "Reliable water supply provisions with dedicated overhead and underground storage tanks",
+    "Underground drainage & sewage network",
+    "Designer main entrance gate & demarcated compound wall for every home",
+    "Proximity to top schools, hospitals, and Pandharpur city center"
+  ],
+  "contact_routing_rules": {
+    "site_engineer": {
+      "name": "Site Engineer / Booking Desk",
+      "phone": "+91 99703 53935",
+      "whatsapp": "+91 99703 53935",
+      "use_cases": "Booking sample bungalow walkthroughs, current Phase 1 availability, booking inquiries, architectural queries, construction milestone updates, and daily site visits."
+    },
+    "leadership_contacts": {
+      "note": "For strategic corporate inquiries and builder leadership only. General visitor inquiries must always be routed to the Site Engineer (+91 99703 53935)."
+    }
+  },
+  "frequently_asked_questions": [
+    {
+      "question": "Can I visit and see a finished bungalow right now?",
+      "answer": "Yes! The completed Deccan Imperia sample bungalow is ready on-site. Private walkthroughs are available daily between 9:00 AM and 7:00 PM at Gate No. 39, Tathe Deshmukh Nagar, Behind Doodh Pandhari, Pune–Pandharpur Road. You can call or WhatsApp our Site Engineer at +91 99703 53935 to confirm your visit time."
+    },
+    {
+      "question": "What are the plot dimensions and layout?",
+      "answer": "Every bungalow is built on an independent 30 × 50 ft plot (1,500 sq. ft.). It is a G+1 independent structure featuring a 3 BHK layout with a dedicated car parking porch, front/rear green setbacks, and a private open rooftop terrace."
+    },
+    {
+      "question": "What is the price of a bungalow?",
+      "answer": "Pricing and payment schedules for Deccan Imperia are shared exclusively upon request during private site visits or directly by our Site Engineer. We do not quote pricing figures in the chat. We invite you to schedule a sample bungalow walkthrough or connect directly with our Site Engineer on +91 99703 53935."
+    },
+    {
+      "question": "Are bank home loans available for this project?",
+      "answer": "Yes, home loan assistance is provided with leading nationalized and private banks. Our sales team facilitates complete loan paperwork and title verification assistance."
+    },
+    {
+      "question": "Who is the architect behind Deccan Imperia?",
+      "answer": "Deccan Imperia has been meticulously planned and designed by Bagal Architects, known for creating climate-responsive, contemporary homes with optimal natural air circulation and Vaastu alignment."
+    },
+    {
+      "question": "Where is the site located?",
+      "answer": "The project is located at Gate No. 39, Tathe Deshmukh Nagar, Behind Doodh Pandhari, on the Pune–Pandharpur Road in Pandharpur (PIN: 413304), just 7 to 10 minutes from the town center and Vitthal Mandir corridor."
+    }
+  ],
+  "custom_qna": []
+}

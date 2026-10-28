@@ -1,0 +1,17 @@
+[
+    {
+        "date": "2026-10-27 07:34:07",
+        "query": "hi",
+        "status": "pending_training"
+    },
+    {
+        "date": "2026-10-27 07:34:16",
+        "query": "how are you",
+        "status": "pending_training"
+    },
+    {
+        "date": "2026-10-27 09:07:10",
+        "query": "📞 Talk to Site Engineer",
+        "status": "pending_training"
+    }
+]

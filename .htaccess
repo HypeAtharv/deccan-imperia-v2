@@ -2,7 +2,22 @@
 # Deccan Imperia — Apache / LiteSpeed Configuration for Hostinger
 # ----------------------------------------------------------------------
 
+# Security: Block sensitive files from direct web access
+<FilesMatch "^\.env|(\.json)$">
+    # Block .env and internal JSON files, allow knowledge_base if needed or route via PHP
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Specifically protect .env and data directory
+<IfModule mod_authz_core.c>
+    <FilesMatch "^\.env">
+        Require all denied
+    </FilesMatch>
+</IfModule>
+
 # Enable Rewrite Engine
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
